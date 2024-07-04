@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login popup</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__left">
+          <img
+            class="header__left--logo"
+            src="./starlogo.png"
+            alt="logo starbaks"
+            width="50"
+            height="50"
+          />
+          <nav>
+            <ul>
+              <li><a href="#">MENU</a></li>
+              <li><a href="#">MENUREWARDS</a></li>
+              <li><a href="#">GIFT CARDS</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <a href="#"> find a store</a>
+          <button class="open-popup" id="openPopupBtn">Sign in</button>
+          <button class="open-popup right" id="openPopupBtn">Join now</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="coffee">
+        <div class="coffee__left">
+          <img src="./potp1.png" alt="coffe" title="sturbucks" />
+        </div>
+        <div class="coffee__right">
+          <h1 class="coffee__right--head">Introduced Iced Energy</h1>
+          <p class="coffee__right--param">
+            Elevate Your day with a powerful boost of sugar-free energy crafted
+            with sparkling fruit flavors and iced tea. (Available Velnti Only)
+          </p>
+          <button class="popup__button order">order now</button>
+        </div>
+      </section>
+      <section class="drink mgt">
+        <div class="coffee__right bgck pt pb">
+          <h1 class="coffee__right--head">Introduced Iced Energy</h1>
+          <p class="coffee__right--param">
+            Elevate Your day with a powerful boost of sugar-free energy crafted
+            with sparkling fruit flavors and iced tea. (Available Velnti Only)
+          </p>
+          <button
+            class="popup__button order"
+            style="border: 1px solid black; color: black"
+          >
+            order now
+          </button>
+        </div>
+        <div class="coffee__left">
+          <img src="./poto3.png" alt="drink" title="sturbucks" height="100%" />
+        </div>
+      </section>
+    </main>
+    <!-- popup-box -->
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <span class="popup__close" id="closePopupBtn">&times;</span>
+        <h2 class="popup__title">Register</h2>
+        <form class="popup__form">
+          <!-- username -->
+          <label class="popup__label" for="usarname">Username:</label>
+          <input
+            class="popup__input"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+          <!-- emali -->
+          <label class="popup__label" for="email">Email:</label>
+          <input
+            class="popup__input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <!-- pasword -->
+          <label class="popup__label" for="password">Password</label>
+          <input
+            class="popup__input"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <!-- confirm password -->
+          <label class="popup__label" for="confirm-password"
+            >Confirm-Password</label
+          >
+          <input
+            class="popup__input"
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+          <button class="popup__button" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
